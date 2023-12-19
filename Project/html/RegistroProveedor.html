@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario de Proveedor</title>
+  </head>
+  <body
+    style="
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      padding: 50px;
+      background-color: #f4f4f4;
+    "
+  >
+    <form
+      action="../php/Formulario_proveedor.php"
+      method="post"
+      style="
+        width: 100%;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      "
+    >
+      <h2 style="color: #007bff">Formulario de Proveedores</h2>
+      <div style="display: flex; justify-content: space-around">
+        <div>
+          <label
+            for="nombre_empresa"
+            style="
+              display: block;
+              text-align: left;
+              margin-bottom: 5px;
+              color: #333;
+            "
+            >Nombre de la Empresa:</label
+          >
+          <input
+            type="text"
+            id="nombre_empresa"
+            name="nombre_empresa"
+            required
+            pattern="^[a-zA-Z0-9\s]+$"
+            title="Solo letras, números y espacios permitidos"
+            style="
+              width: 100%;
+              padding: 8px;
+              box-sizing: border-box;
+              border: 1px solid #ccc;
+              border-radius: 4px;
+              margin-bottom: 15px;
+            "
+            placeholder="Ej. Empresa ABC"
+          />
+
+          <label
+            for="tipo_producto"
+            style="
+              display: block;
+              text-align: left;
+              margin-bottom: 5px;
+              color: #333;
+            "
+            >Tipo de Producto que Proveen:</label
+          >
+          <input
+            type="text"
+            id="tipo_producto"
+            name="tipo_producto"
+            required
+            pattern="^[a-zA-Z0-9\s]+$"
+            title="Solo letras, números y espacios permitidos"
+            style="
+              width: 100%;
+              padding: 8px;
+              box-sizing: border-box;
+              border: 1px solid #ccc;
+              border-radius: 4px;
+              margin-bottom: 15px;
+            "
+            placeholder="Ej. Suministros de Oficina"
+          />
+
+          <label
+            for="contacto_nombre"
+            style="
+              display: block;
+              text-align: left;
+              margin-bottom: 5px;
+              color: #333;
+            "
+            >Nombre del Contacto:</label
+          >
+          <input
+            type="text"
+            id="contacto_nombre"
+            name="contacto_nombre"
+            required
+            pattern="^[a-zA-Z\s]+$"
+            title="Solo letras y espacios permitidos"
+            style="
+              width: 100%;
+              padding: 8px;
+              box-sizing: border-box;
+              border: 1px solid #ccc;
+              border-radius: 4px;
+              margin-bottom: 15px;
+            "
+            placeholder="Ej. Juan Pérez"
+          />
+
+          <label
+            for="telefono"
+            style="
+              display: block;
+              text-align: left;
+              margin-bottom: 5px;
+              color: #333;
+            "
+            >Teléfono:</label
+          >
+          <input
+            type="tel"
+            id="telefono"
+            name="telefono"
+            style="
+              width: 100%;
+              padding: 8px;
+              box-sizing: border-box;
+              border: 1px solid #ccc;
+              border-radius: 4px;
+              margin-bottom: 15px;
+            "
+            placeholder="Ej. Juan Pérez"
+          />
+
+          <label
+            for="direccion"
+            style="
+              display: block;
+              text-align: left;
+              margin-bottom: 5px;
+              color: #333;
+            "
+            >Dirección:</label
+          >
+          <textarea
+            id="direccion"
+            name="direccion"
+            rows="4"
+            cols="50"
+            style="
+              width: 100%;
+              padding: 8px;
+              box-sizing: border-box;
+              border: 1px solid #ccc;
+              border-radius: 4px;
+              margin-bottom: 15px;
+            "
+            placeholder="Ej. Juan Pérez"
+          ></textarea>
+
+          <label
+            for="ciudad"
+            style="
+              display: block;
+              text-align: left;
+              margin-bottom: 5px;
+              color: #333;
+            "
+            >Ciudad:</label
+          >
+          <input
+            type="text"
+            id="ciudad"
+            name="ciudad"
+            style="
+              width: 100%;
+              padding: 8px;
+              box-sizing: border-box;
+              border: 1px solid #ccc;
+              border-radius: 4px;
+              margin-bottom: 15px;
+            "
+            placeholder="Ej. Juan Pérez"
+          />
+        </div>
+        <div>
+          <label
+            for="pais"
+            style="
+              display: block;
+              text-align: left;
+              margin-bottom: 5px;
+              color: #333;
+            "
+            >País:</label
+          >
+          <input
+            type="text"
+            id="pais"
+            name="pais"
+            style="
+              width: 100%;
+              padding: 8px;
+              box-sizing: border-box;
+              border: 1px solid #ccc;
+              border-radius: 4px;
+              margin-bottom: 15px;
+            "
+            placeholder="Ej. Juan Pérez"
+          />
+
+          <label
+            for="sitio_web"
+            style="
+              display: block;
+              text-align: left;
+              margin-bottom: 5px;
+              color: #333;
+            "
+            >Sitio Web:</label
+          >
+          <input
+            type="url"
+            id="sitio_web"
+            name="sitio_web"
+            style="
+              width: 100%;
+              padding: 8px;
+              box-sizing: border-box;
+              border: 1px solid #ccc;
+              border-radius: 4px;
+              margin-bottom: 15px;
+            "
+            placeholder="Ej. Juan Pérez"
+          />
+
+          <label
+            for="descripcion"
+            style="
+              display: block;
+              text-align: left;
+              margin-bottom: 5px;
+              color: #333;
+            "
+            >Descripción de la Empresa:</label
+          >
+          <textarea
+            id="descripcion"
+            name="descripcion"
+            rows="4"
+            cols="50"
+            style="
+              width: 100%;
+              padding: 8px;
+              box-sizing: border-box;
+              border: 1px solid #ccc;
+              border-radius: 4px;
+              margin-bottom: 15px;
+            "
+            placeholder="Ej. Juan Pérez"
+          ></textarea>
+
+          <label
+            for="metodos_pago"
+            style="
+              display: block;
+              text-align: left;
+              margin-bottom: 5px;
+              color: #333;
+            "
+            >Métodos de Pago Aceptados:</label
+          >
+          <input
+            type="checkbox"
+            id="pago_efectivo"
+            name="metodos_pago[]"
+            value="Efectivo"
+          />
+          <label for="pago_efectivo">Efectivo</label>
+          <input
+            type="checkbox"
+            id="pago_tarjeta"
+            name="metodos_pago[]"
+            value="Tarjeta"
+          />
+          <label for="pago_tarjeta">Tarjeta de Crédito/Débito</label>
+          <input
+            type="checkbox"
+            id="pago_transferencia"
+            name="metodos_pago[]"
+            value="Transferencia"
+          />
+          <label for="pago_transferencia">Transferencia Bancaria</label>
+
+          <label
+            for="horario"
+            style="
+              display: block;
+              text-align: left;
+              margin-bottom: 5px;
+              color: #333;
+            "
+            >Horario de Atención:</label
+          >
+          <input
+            type="text"
+            id="horario"
+            name="horario"
+            style="
+              width: 100%;
+              padding: 8px;
+              box-sizing: border-box;
+              border: 1px solid #ccc;
+              border-radius: 4px;
+              margin-bottom: 15px;
+            "
+            placeholder="Ej. Juan Pérez"
+          />
+
+          <label
+            for="notas"
+            style="
+              display: block;
+              text-align: left;
+              margin-bottom: 5px;
+              color: #333;
+            "
+            >Notas Adicionales:</label
+          >
+          <textarea
+            id="notas"
+            name="notas"
+            rows="4"
+            cols="50"
+            style="
+              width: 100%;
+              padding: 8px;
+              box-sizing: border-box;
+              border: 1px solid #ccc;
+              border-radius: 4px;
+              margin-bottom: 15px;
+            "
+            placeholder="Ej. Juan Pérez"
+          ></textarea>
+        </div>
+      </div>
+      <input
+        type="submit"
+        value="Añadir"
+        style="
+          background-color: #007bff;
+          color: #fff;
+          padding: 10px 15px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        "
+      />
+    </form>
+  </body>
+</html>
