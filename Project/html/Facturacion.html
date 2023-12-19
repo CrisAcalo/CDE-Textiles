@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Facturación</title>
+</head>
+<body>
+    <h2>Facturación</h2>
+    <form action="../php/Formulario_facturacion.php" method="post">
+        <label for="cliente">Cliente:</label><br>
+        <select id="cliente" name="cliente">
+            <option value="cliente1">Cliente 1</option>
+            <option value="cliente2">Cliente 2</option>
+            <option value="cliente3">Cliente 3</option>
+        </select><br><br>
+
+        <label for="producto">Producto:</label><br>
+        <select id="producto" name="producto">
+            <option value="almohada">Almohada</option>
+            <option value="sabana">Sábana</option>
+            <option value="cobertor">Cobertor</option>
+            <option value="funda_almohada">Funda de Almohada</option>
+            <option value="duvets">Duvets</option>
+        </select><br><br>
+
+        <label for="cantidad">Cantidad:</label>
+        <input type="number" id="cantidad" name="cantidad" min="1" required><br><br>
+
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha" name="fecha" required><br><br>
+
+        <label for="metodo_pago">Método de Pago:</label><br>
+        <input type="radio" id="efectivo" name="metodo_pago" value="Efectivo">
+        <label for="efectivo">Efectivo</label><br>
+        <input type="radio" id="tarjeta" name="metodo_pago" value="Tarjeta">
+        <label for="tarjeta">Tarjeta de Crédito/Débito</label><br>
+        <input type="radio" id="transferencia" name="metodo_pago" value="Transferencia">
+        <label for="transferencia">Transferencia Bancaria</label><br>
+
+        <br>
+
+        <input type="submit" value="Generar Factura">
+    </form>
+</body>
+</html>

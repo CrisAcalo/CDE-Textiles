@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de Productos</title>
+</head>
+<body>
+    <h2>Ingrese la información del producto:</h2>
+    <form action="../php/Formulario_productos.php" method="post">
+      <label for="tipo_producto">Tipo de Producto:</label><br>
+      <select id="tipo_producto" name="tipo_producto">
+        <option value="almohada">Almohada</option>
+        <option value="sabana">Sábana</option>
+        <option value="cobertor">Cobertor</option>
+        <option value="funda_almohada">Funda de Almohada</option>
+        <option value="duvets">Duvets</option>
+        <option value="otros">Otros</option>
+      </select><br><br>
+  
+      <label for="tamano">Tamaño:</label><br>
+      <select id="tamano" name="tamano">
+        <option value="pequeno">Pequeño</option>
+        <option value="mediano">Mediano</option>
+        <option value="grande">Grande</option>
+        <option value="extra_grande">Extra Grande</option>
+      </select><br><br>
+  
+      <label for="precio">Precio:</label><br>
+      <input type="number" id="precio" name="precio" min="0" step="0.01"><br><br>
+  
+      <label>Tipo de Tela:</label><br>
+      <input type="radio" id="lino" name="tipo_tela" value="lino">
+      <label for="lino">Lino</label><br>
+      <input type="radio" id="algodon" name="tipo_tela" value="algodon">
+      <label for="algodon">Algodón</label><br>
+      <input type="radio" id="nailon" name="tipo_tela" value="nailon">
+      <label for="nailon">Nailon</label><br>
+      <input type="radio" id="seda" name="tipo_tela" value="seda">
+      <label for="nailon">Seda</label><br>
+      <input type="radio" id="poliester" name="tipo_tela" value="poliester">
+      <label for="nailon">Poliester</label><br>
+
+          
+      <br>
+  
+      <label for="descripcion">Descripción:</label><br>
+      <textarea id="descripcion" name="descripcion" rows="4" cols="50"></textarea><br><br>
+  
+      <label for="stock">Stock:</label><br>
+      <input type="number" id="stock" name="stock" min="0"><br><br>
+  
+      <input type="submit" value="Enviar">
+    </form>
+  </body>
+</html>
