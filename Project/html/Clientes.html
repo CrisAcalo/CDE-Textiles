@@ -45,13 +45,14 @@
             margin-bottom: 5px;
             color: #333;
           "
-          >Nombre:</label
+          >Nombres y Apellidos:</label
         >
         <input
           type="text"
           id="nombres"
           name="nombres"
           required
+          placeholder="Ej: Juan Nada Perez Armstrong"
           style="
             width: 100%;
             padding: 8px;
@@ -79,6 +80,7 @@
           pattern="[0-9]{10}"
           required
           title="La cédula debe tener 10 dígitos"
+          placeholder="Ej: 0264058232"
           style="
             width: 100%;
             padding: 8px;
@@ -105,6 +107,7 @@
           name="celular"
           pattern="[0-9]{10}"
           required
+          placeholder="Ej: 0993648492"
           title="El número de celular debe tener 10 dígitos"
           style="
             width: 100%;
@@ -130,7 +133,9 @@
           type="email"
           id="correo"
           name="correo"
+          pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
           required
+          placeholder="Ej: tucorreo@example.com"
           style="
             width: 100%;
             padding: 8px;
@@ -156,6 +161,7 @@
           id="direccion"
           name="direccion"
           required
+          placeholder="Av. Siempre Viva - calle 23. Casa 118"
           style="
             width: 100%;
             padding: 8px;
@@ -169,6 +175,7 @@
         <input
           type="submit"
           value="Añadir"
+          formaction="../php/formulario_cliente.php"
           style="
             background-color: #007bff;
             color: #fff;

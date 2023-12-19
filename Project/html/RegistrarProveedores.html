@@ -25,7 +25,7 @@
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       "
     >
-      <h2 style="color: #007bff">Formulario de Proveedores</h2>
+      <h2 style="color: #007bff">Formulario de Proveedoress</h2>
       <div style="display: flex; justify-content: space-around">
         <div>
           <label
@@ -81,7 +81,7 @@
               border-radius: 4px;
               margin-bottom: 15px;
             "
-            placeholder="Ej. Suministros de Oficina"
+            placeholder="Ej: Tela antiaderente"
           />
 
           <label
@@ -109,23 +109,25 @@
               border-radius: 4px;
               margin-bottom: 15px;
             "
-            placeholder="Ej. Juan Pérez"
+            placeholder="Ej: Juan Álvarez"
           />
-
           <label
-            for="telefono"
+            for="contacto_email"
             style="
               display: block;
               text-align: left;
               margin-bottom: 5px;
               color: #333;
             "
-            >Teléfono:</label
+            >Correo Electrónico:</label
           >
           <input
-            type="tel"
-            id="telefono"
-            name="telefono"
+            type="email"
+            id="contacto_email"
+            name="contacto_email"
+            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+            required
+            placeholder="Ej: correoproveedor@example.com"
             style="
               width: 100%;
               padding: 8px;
@@ -134,7 +136,32 @@
               border-radius: 4px;
               margin-bottom: 15px;
             "
-            placeholder="Ej. Juan Pérez"
+          />
+          <label
+            for="telefono"
+            style="
+              display: block;
+              text-align: left;
+              margin-bottom: 5px;
+              color: #333;
+            "
+            >Celular de Contacto:</label
+          >
+          <input
+            type="tel"
+            id="telefono"
+            name="telefono"
+            required
+            pattern="[0-9]{10}"
+            style="
+              width: 100%;
+              padding: 8px;
+              box-sizing: border-box;
+              border: 1px solid #ccc;
+              border-radius: 4px;
+              margin-bottom: 15px;
+            "
+            placeholder="Ej: 0993648492"
           />
 
           <label
@@ -150,6 +177,7 @@
           <textarea
             id="direccion"
             name="direccion"
+            required
             rows="4"
             cols="50"
             style="
@@ -160,7 +188,7 @@
               border-radius: 4px;
               margin-bottom: 15px;
             "
-            placeholder="Ej. Juan Pérez"
+            placeholder="Ej: Av. Guayaquil. Av. Siempre Viva - calle 23. Casa 118"
           ></textarea>
 
           <label
@@ -177,6 +205,7 @@
             type="text"
             id="ciudad"
             name="ciudad"
+            required
             style="
               width: 100%;
               padding: 8px;
@@ -185,7 +214,7 @@
               border-radius: 4px;
               margin-bottom: 15px;
             "
-            placeholder="Ej. Juan Pérez"
+            placeholder="Ej: Latacunga"
           />
         </div>
         <div>
@@ -203,6 +232,8 @@
             type="text"
             id="pais"
             name="pais"
+            required
+            pattern="[A-Za-z]+"
             style="
               width: 100%;
               padding: 8px;
@@ -211,7 +242,7 @@
               border-radius: 4px;
               margin-bottom: 15px;
             "
-            placeholder="Ej. Juan Pérez"
+            placeholder="Ej: Ecuador"
           />
 
           <label
@@ -236,7 +267,7 @@
               border-radius: 4px;
               margin-bottom: 15px;
             "
-            placeholder="Ej. Juan Pérez"
+            placeholder="Ej: www.importadoraRamirez.com"
           />
 
           <label
@@ -262,7 +293,7 @@
               border-radius: 4px;
               margin-bottom: 15px;
             "
-            placeholder="Ej. Juan Pérez"
+            placeholder="Ej: la empresa importadora ramirez trae prodectos de calidad y hasta el momento no han existido entregas defectuosas"
           ></textarea>
 
           <label
@@ -294,6 +325,7 @@
             id="pago_transferencia"
             name="metodos_pago[]"
             value="Transferencia"
+            style="margin: 0 0 20px 0"
           />
           <label for="pago_transferencia">Transferencia Bancaria</label>
 
@@ -307,12 +339,22 @@
             "
             >Horario de Atención:</label
           >
-          <input
-            type="text"
-            id="horario"
-            name="horario"
+          <label
+            for="horarioDesde"
             style="
-              width: 100%;
+              display: inline;
+              text-align: left;
+              margin-bottom: 5px;
+              color: #333;
+            "
+            >Desde:</label
+          >
+          <input
+            type="time"
+            id="horarioDesde"
+            name="horarioDesde"
+            style="
+              display: inline;
               padding: 8px;
               box-sizing: border-box;
               border: 1px solid #ccc;
@@ -320,6 +362,29 @@
               margin-bottom: 15px;
             "
             placeholder="Ej. Juan Pérez"
+          />
+          <label
+            for="horarioHasta"
+            style="
+              display: inline;
+              text-align: left;
+              margin-bottom: 5px;
+              color: #333;
+            "
+            >Hasta:</label
+          >
+          <input
+            type="time"
+            id="horarioHasta"
+            name="horarioHasta"
+            style="
+              display: inline;
+              padding: 8px;
+              box-sizing: border-box;
+              border: 1px solid #ccc;
+              border-radius: 4px;
+              margin-bottom: 15px;
+            "
           />
 
           <label
@@ -345,7 +410,7 @@
               border-radius: 4px;
               margin-bottom: 15px;
             "
-            placeholder="Ej. Juan Pérez"
+            placeholder="Ej: El proveedor solamente atiende por llamada telefónica"
           ></textarea>
         </div>
       </div>
