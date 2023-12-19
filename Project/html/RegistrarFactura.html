@@ -1,45 +1,186 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Formulario de Facturación</title>
-</head>
-<body>
-    <h2>Facturaciónasdads</h2>
-    <form action="../php/Formulario_facturacion.php" method="post">
-        <label for="cliente">Cliente:</label><br>
-        <select id="cliente" name="cliente">
-            <option value="cliente1">Cliente 1</option>
-            <option value="cliente2">Cliente 2</option>
-            <option value="cliente3">Cliente 3</option>
-        </select><br><br>
+  </head>
+  <body
+    style="
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      padding: 50px;
+      background-color: #f4f4f4;
+    "
+  >
+    <form
+      action="../php/Formulario_facturacion.php"
+      method="post"
+      style="
+        max-width: 400px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      "
+    >
+      <h2 style="color: #007bff">Facturación</h2>
 
-        <label for="producto">Producto:</label><br>
-        <select id="producto" name="producto">
-            <option value="almohada">Almohada</option>
-            <option value="sabana">Sábana</option>
-            <option value="cobertor">Cobertor</option>
-            <option value="funda_almohada">Funda de Almohada</option>
-            <option value="duvets">Duvets</option>
-        </select><br><br>
+      <label
+        for="cliente"
+        style="
+          display: block;
+          text-align: left;
+          margin-bottom: 5px;
+          color: #333;
+        "
+        >Cliente:</label
+      >
+      <select
+        id="cliente"
+        name="cliente"
+        required
+        style="
+          width: 100%;
+          padding: 8px;
+          box-sizing: border-box;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          margin-bottom: 15px;
+        "
+      >
+        <option value="cliente1">Cliente 1</option>
+        <option value="cliente2">Cliente 2</option>
+        <option value="cliente3">Cliente 3</option>
+      </select>
 
-        <label for="cantidad">Cantidad:</label>
-        <input type="number" id="cantidad" name="cantidad" min="1" required><br><br>
+      <label
+        for="producto"
+        style="
+          display: block;
+          text-align: left;
+          margin-bottom: 5px;
+          color: #333;
+        "
+        >Producto:</label
+      >
+      <select
+        id="producto"
+        name="producto"
+        required
+        style="
+          width: 100%;
+          padding: 8px;
+          box-sizing: border-box;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          margin-bottom: 15px;
+        "
+      >
+        <option value="almohada">Almohada</option>
+        <option value="sabana">Sábana</option>
+        <option value="cobertor">Cobertor</option>
+        <option value="funda_almohada">Funda de Almohada</option>
+        <option value="duvets">Duvets</option>
+      </select>
 
-        <label for="fecha">Fecha:</label>
-        <input type="date" id="fecha" name="fecha" required><br><br>
+      <label
+        for="cantidad"
+        style="
+          display: block;
+          text-align: left;
+          margin-bottom: 5px;
+          color: #333;
+        "
+        >Cantidad:</label
+      >
+      <input
+        type="number"
+        id="cantidad"
+        name="cantidad"
+        min="1"
+        required
+        style="
+          width: 100%;
+          padding: 8px;
+          box-sizing: border-box;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          margin-bottom: 15px;
+        "
+        placeholder="Ingrese la cantidad"
+      />
 
-        <label for="metodo_pago">Método de Pago:</label><br>
-        <input type="radio" id="efectivo" name="metodo_pago" value="Efectivo">
-        <label for="efectivo">Efectivo</label><br>
-        <input type="radio" id="tarjeta" name="metodo_pago" value="Tarjeta">
-        <label for="tarjeta">Tarjeta de Crédito/Débito</label><br>
-        <input type="radio" id="transferencia" name="metodo_pago" value="Transferencia">
-        <label for="transferencia">Transferencia Bancaria</label><br>
+      <label
+        for="fecha"
+        style="
+          display: block;
+          text-align: left;
+          margin-bottom: 5px;
+          color: #333;
+        "
+        >Fecha:</label
+      >
+      <input
+        type="date"
+        id="fecha"
+        name="fecha"
+        required
+        style="
+          width: 100%;
+          padding: 8px;
+          box-sizing: border-box;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          margin-bottom: 15px;
+        "
+      />
 
-        <br>
+      <label
+        for="metodo_pago"
+        style="
+          display: block;
+          text-align: left;
+          margin-bottom: 5px;
+          color: #333;
+        "
+        >Método de Pago:</label
+      >
+      <div
+        style="
+          display: flex;
+          gap: 10px;
+          align-items: center;
+          margin-bottom: 15px;
+        "
+      >
+        <input type="radio" id="efectivo" name="metodo_pago" value="Efectivo" />
+        <label for="efectivo">Efectivo</label>
 
-        <input type="submit" value="Generar Factura">
+        <input type="radio" id="tarjeta" name="metodo_pago" value="Tarjeta" />
+        <label for="tarjeta">Tarjeta de Crédito/Débito</label>
+
+        <input
+          type="radio"
+          id="transferencia"
+          name="metodo_pago"
+          value="Transferencia"
+        />
+        <label for="transferencia">Transferencia Bancaria</label>
+      </div>
+<br>
+      <input
+        type="submit"
+        value="Generar Factura"
+        style="
+          background-color: #007bff;
+          color: #fff;
+          padding: 10px 15px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        "
+      />
     </form>
-</body>
+  </body>
 </html>
