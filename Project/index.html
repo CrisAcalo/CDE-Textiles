@@ -1,55 +1,212 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>CDE Textiles - Página Principal</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>CDE Textiles - Página Principal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&family=Whisper&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body
+    style="
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    "
+  >
+    <!-- Header -->
+    <header style="position: fixed; width: 100%; top: 0; z-index: 100">
+      <div
+        style="
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 20px;
+        "
+      >
+        <div style="width: 30%">
+          <h1
+            style="
+              margin: 0;
+              background-color: #e4d8cfc5;
+              backdrop-filter: blur(7px);
+              width: max-content;
+              padding: 5px 30px;
+              border-radius: 50px;
+            "
+          >
+            <a href="#" style="text-decoration: none; color: #55483e"
+              >CDE Textiles</a
+            >
+          </h1>
+        </div>
 
-  <!-- Header -->
-  <header>
-    <div class="container">
-      <h1>CDE Textiles</h1>
-      <nav>
-        <ul>
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Productos</a></li>
-          <li><a href="#">Contacto</a></li>
-        </ul>
-      </nav>
-      <a href="./html/Ingreso.html" class="btn-sistema">Sistema</a>
-    </div>
-  </header>
+        <nav style="width: 40%">
+          <ul
+            style="
+              list-style: none;
+              display: flex;
+              margin: 0 auto;
+              padding: 0;
+              justify-content: center;
+              align-items: center;
+              background-color: #55483e98;
+              backdrop-filter: blur(7px);
+              width: max-content;
+              padding: 15px 50px;
+              border-radius: 50px;
+            "
+          >
+            <li style="margin-right: 50px">
+              <a
+                href="#"
+                style="
+                  text-decoration: none;
+                  border: solid 2px #e4d8cf;
+                  padding: 3px 20px;
+                  border-radius: 50px;
+                  color: #e4d8cf;
+                "
+                >Inicio</a
+              >
+            </li>
+            <li style="margin-right: 50px">
+              <a
+                href="#"
+                style="
+                  text-decoration: none;
+                  border: solid 2px #ffffff00;
+                  padding: 3px 20px;
+                  border-radius: 50px;
+                  color: #e4d8cf;
+                "
+                >Productos</a
+              >
+            </li>
+            <li style="">
+              <a
+                href="#"
+                style="
+                  text-decoration: none;
+                  border: solid 2px #ffffff00;
+                  padding: 3px 20px;
+                  border-radius: 50px;
+                  color: #e4d8cf;
+                "
+                >Contacto</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div style="width: 30%; text-align: end">
+          <a
+            href="./html/Ingreso.html"
+            class="btn-sistema"
+            style="
+              text-decoration: none;
+              color: #55483e;
+              background-color: #e4d8cf;
+              padding: 10px 30px;
+              border-radius: 50px;
+            "
+            >Sistema</a
+          >
+        </div>
+      </div>
+    </header>
 
-  <!-- Body -->
-  <main>
-    <section class="mision-vision-alcance">
-      <h2>Misión, Visión y Alcance</h2>
-      <table>
-        <tr>
-          <td>Misión:</td>
-          <td>Crear textiles de alta calidad que satisfagan las necesidades de nuestros clientes, superando sus expectativas con innovación y excelencia.</td>
-        </tr>
-        <tr>
-          <td>Visión:</td>
-          <td>Ser líderes en la industria textil, reconocidos por nuestra calidad, compromiso con la sostenibilidad y servicio al cliente.</td>
-        </tr>
-        <tr>
-          <td>Alcance:</td>
-          <td>Producir una amplia gama de textiles utilizando tecnologías de vanguardia y prácticas sostenibles para alcanzar mercados globales.</td>
-        </tr>
-      </table>
-    </section>
-    
-  </main>
+    <!-- Body -->
+    <main style="height: 300vh">
+      <div>
+        <img
+          src="imagen/Principal_Image.jpg"
+          alt=""
+          style="
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+            position: relative;
+            z-index: 50;
+          "
+        />
+        <div
+          style="
+            position: absolute;
+            top: 10%;
+            left: calc(50% - 500px);
+            z-index: 75;
+            width: 1000px;
+            text-align: center;
+          "
+        >
+          <h1
+            style="
+              color: #e4d8cf;
+              font-size: 10rem;
+              font-family: 'Quicksand', sans-serif;
+              font-family: 'Whisper', cursive;
+            "
+          >
+            CDE Textiles
+          </h1>
+          <p
+            style="
+              color: #e4d8cf;
+              background-color: #55483e98;
+              backdrop-filter: blur(7px);
+              width: max-content;
+              margin: 0 auto;
+              padding: 10px 50px;
+              border-radius: 50px;
+              font-size: 2.5rem;
+              font-family: 'Quicksand', sans-serif;
+              font-family: 'Whisper', cursive;
+            "
+          >
+            Textiles Exclusivos para un Hogar
+            Sofisticado
+          </p>
+        </div>
+      </div>
+      <section class="mision-vision-alcance">
+        <h2>Misión, Visión y Alcance</h2>
+        <table>
+          <tr>
+            <td>Misión:</td>
+            <td>
+              Crear textiles de alta calidad que satisfagan las necesidades de
+              nuestros clientes, superando sus expectativas con innovación y
+              excelencia.
+            </td>
+          </tr>
+          <tr>
+            <td>Visión:</td>
+            <td>
+              Ser líderes en la industria textil, reconocidos por nuestra
+              calidad, compromiso con la sostenibilidad y servicio al cliente.
+            </td>
+          </tr>
+          <tr>
+            <td>Alcance:</td>
+            <td>
+              Producir una amplia gama de textiles utilizando tecnologías de
+              vanguardia y prácticas sostenibles para alcanzar mercados
+              globales.
+            </td>
+          </tr>
+        </table>
+      </section>
+    </main>
 
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2023 CDE Textiles. Todos los derechos reservados.</p>
-    </div>
-  </footer>
-
-</body>
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2023 CDE Textiles. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+  </body>
 </html>
