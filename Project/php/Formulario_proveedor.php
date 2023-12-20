@@ -51,7 +51,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         background-color: #f4f4f4;
         width: 100%;
       ">
-        
+
         <div style="
           width: 100%;
           background-color: #fff;
@@ -62,9 +62,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
           overflow-x: auto;
         ">
-            <table style="width: 100%; white-space: nowrap; border-collapse: collapse;">
+            <table style="width: 100%; white-space: wrap; border-collapse: collapse;">
                 <caption style="font-size: 1.2rem; margin-bottom: 10px;color: #007bff;">
-                    Clientes
+                    Proveedores
                 </caption>
                 <thead style="background-color: #007bff;color: #fff;">
                     <tr>
@@ -96,10 +96,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <td style="padding: 0 5px"><?php echo $pais ?></td>
                     <td style="padding: 0 5px"><?php echo $sitio_web ?></td>
                     <td style="padding: 0 5px"><?php echo $descripcion ?>
-                    <td style="padding: 0 5px"><?php echo $metodos_pago ?></td>
-                    <td style="padding: 0 5px"><?php echo $horarioDesde .' / '. $horarioHasta ?></td>
+                    <td style="padding: 0 5px"><?php foreach ($metodos_pago as $metodo) {
+                                                    echo $metodo.' ';
+                                                } ?></td>
+                    <td style="padding: 0 5px"><?php echo $horarioDesde . ' / ' . $horarioHasta ?></td>
                     <td style="padding: 0 5px"><?php echo $notas ?></td>
-                    
+
                     <td style="padding: 0 5px">
                         <button style="
                   padding: 6px 6px 4px 6px;
