@@ -18,7 +18,6 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     "
   >
-    <!-- Header -->
     <header
       style="
         position: fixed;
@@ -26,160 +25,207 @@
         top: 0;
         z-index: 100;
         backdrop-filter: blur(5px);
-        height: 90px;
+        height: 60px;
+        background-color: #55483e13;
       "
     >
-      <div
-        style="
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          padding: 20px;
-        "
-      >
-        <div style="width: 30%">
-          <h1
-            style="
-              margin: 0;
-              background-color: #e4d8cfc5;
-              backdrop-filter: blur(7px);
-              width: max-content;
-              padding: 5px 30px;
-              border-radius: 50px;
-            "
-          >
-            <a href="../../index.html" style="text-decoration: none; color: #55483e"
-              >CDE Textiles</a
-            >
-          </h1>
-        </div>
-
-        <nav style="width: 40%">
-          <ul
-            style="
-              list-style: none;
-              display: flex;
-              margin: 0 auto;
-              padding: 0;
-              justify-content: center;
-              align-items: center;
-              background-color: #55483e;
-              backdrop-filter: blur(7px);
-              width: max-content;
-              padding: 15px 50px;
-              border-radius: 50px;
-            "
-          >
-            <li style="margin-right: 50px">
+      <table style="width: 100%; text-align: center">
+        <tr>
+          <td style="width: 20%">
+            <div style="width: 30%">
+              <h1
+                style="
+                  margin: 0;
+                  background-color: #e4d8cfc5;
+                  backdrop-filter: blur(7px);
+                  width: max-content;
+                  padding: 5px 30px;
+                  border-radius: 50px;
+                "
+              >
+                <a
+                  href="../../index.html"
+                  style="text-decoration: none; color: #55483e"
+                  >CDE Textiles</a
+                >
+              </h1>
+            </div>
+          </td>
+          <td style="width: 60%">
+            <nav>
+              <ul
+                style="
+                  list-style: none;
+                  margin: 0 auto;
+                  padding: 13px;
+                  background-color: #55483e;
+                  backdrop-filter: blur(7px);
+                  width: max-content;
+                  border-radius: 50px;
+                "
+              >
+                <table style="width: 100%" align="center">
+                  <tr>
+                    <td style="width: 25%">
+                      <li>
+                        <a
+                          href="../../index.html"
+                          style="
+                            text-decoration: none;
+                            border: solid 2px #e4d8cf00;
+                            padding: 3px 20px;
+                            border-radius: 50px;
+                            color: #e4d8cf;
+                          "
+                          >Inicio</a
+                        >
+                      </li>
+                    </td>
+                    <td style="width: 25%">
+                      <li>
+                        <a
+                          href="./Contactos.html"
+                          style="
+                            text-decoration: none;
+                            border: solid 2px #e4d8cf;
+                            padding: 3px 20px;
+                            border-radius: 50px;
+                            color: #e4d8cf;
+                          "
+                          >Contacto</a
+                        >
+                      </li>
+                    </td>
+                    <td style="width: 25%">
+                      <li>
+                        <a
+                          href="./Empresa.html"
+                          style="
+                            text-decoration: none;
+                            border: solid 2px #e4d8cf00;
+                            padding: 3px 20px;
+                            border-radius: 50px;
+                            color: #e4d8cf;
+                          "
+                          >Empresa</a
+                        >
+                      </li>
+                    </td>
+                    <td style="width: 25%">
+                      <li>
+                        <a
+                          href="./Productos.html"
+                          style="
+                            text-decoration: none;
+                            border: solid 2px rgba(255, 255, 255, 0);
+                            padding: 3px 20px;
+                            border-radius: 50px;
+                            color: #e4d8cf;
+                          "
+                          >Productos</a
+                        >
+                      </li>
+                    </td>
+                  </tr>
+                </table>
+              </ul>
+            </nav>
+          </td>
+          <td style="width: 20%">
+            <div style="width: 100%; text-align: end">
               <a
-                href="../../index.html"
+                href="../Ingreso.html"
+                class="btn-sistema"
                 style="
                   text-decoration: none;
-                  border: solid 2px #e4d8cf00;
-                  padding: 3px 20px;
+                  color: #55483e;
+                  background-color: #e4d8cf;
+                  padding: 10px 30px;
                   border-radius: 50px;
-                  color: #e4d8cf;
+                  margin-right: 20px;
                 "
-                >Inicio</a
+                >Sistema</a
               >
-            </li>
-            <li style="margin-right: 50px">
-              <a
-                href="./Empresa.html"
-                style="
-                  text-decoration: none;
-                  border: solid 2px rgba(255, 255, 255, 0);
-                  padding: 3px 20px;
-                  border-radius: 50px;
-                  color: #e4d8cf;
-                "
-                >Empresa</a
-              >
-            </li>
-            <li style="margin-right: 50px">
-              <a
-                href="./Productos.html"
-                style="
-                  text-decoration: none;
-                  border: solid 2px #e4d8cf00;
-                  padding: 3px 20px;
-                  border-radius: 50px;
-                  color: #e4d8cf;
-                "
-                >Productos</a
-              >
-            </li>
-            <li style="">
-              <a
-                href="./Contactos.html"
-                style="
-                  text-decoration: none;
-                  border: solid 2px #e4d8cf;
-                  padding: 3px 20px;
-                  border-radius: 50px;
-                  color: #e4d8cf;
-                "
-                >Contacto</a
-              >
-            </li>
-          </ul>
-        </nav>
-        <div style="width: 30%; text-align: end">
-          <a
-            href="../Ingreso.html"
-            class="btn-sistema"
-            style="
-              text-decoration: none;
-              color: #55483e;
-              background-color: #e4d8cf;
-              padding: 10px 30px;
-              border-radius: 50px;
-            "
-            >Sistema</a
-          >
-        </div>
-      </div>
+            </div>
+          </td>
+        </tr>
+      </table>
+      <div style="padding: 20px"></div>
     </header>
 
     <!-- Body -->
-    <main style="min-height: 100vh;background-color: #D4BD9B ">
-      <h1 style="text-align:center;">Contactanos</h1>
-     <div style=" width: 90%; margin: auto ; "><br><br>	
-    <table width="94%" border="0" style="margin:auto; background-color: #82745F; ">
-    <tbody>
-      <tr>
-        <td width="47%"><p>&nbsp;</p>
-          <p>&nbsp;</p>
-          <p style="padding: 34px"><img src="../../imagen/logo.png" width="419" height="182" alt="" style="border: 10px solid #7FEDFF;"/></p></td>
-        <td width="36%"><h2 align="center">¿Dónde encontrarnos?</h2>
-            <p>
-            </p>
-            <p><strong>Matriz Quito</strong><br>
-              Alejandro Labaka y Francisco Bolaños  N32-145, Quito 170527.  Telefono: (02) 3456778<br><br>
-              
-              <strong>Sucursal Sangolqui</strong> <br>
-              Av. Gral. Rumiñahui, Quito 171103.<br>
-              Telefono: (02) 3486555<br>
-              <br>
-              <strong>Sucursal Quito Norte</strong><br>
-              Avenida Las Malvas E14-362 Quito<br>
-            Telefono: (02) 5864285</p></td>
-      </tr>
-      <tr>
-        <td colspan="2">
-          <div align="center"><h2>Visítanos</h2>
-       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d838.7519005860257!2d-78.51307807535179!3d-0.17871458593551626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59af962eaf507%3A0x8a42a029613dd77f!2sN32-145%2C%20A%2C%20Quito%20170527!5e0!3m2!1ses-419!2sec!4v1703021279487!5m2!1ses-419!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div></td>
-        </tr>
-    </tbody>
-  </table>
+    <main style="min-height: 100vh; background-color: #d4bd9b">
+      <h1 style="text-align: center">Contactanos</h1>
+      <div style="width: 90%; margin: auto">
+        <br /><br />
+        <table
+          width="94%"
+          border="0"
+          style="margin: auto; background-color: #82745f"
+        >
+          <tbody>
+            <tr>
+              <td width="47%">
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p style="padding: 34px">
+                  <img
+                    src="../../imagen/logo.png"
+                    width="419"
+                    height="182"
+                    alt=""
+                    style="border: 10px solid #7fedff"
+                  />
+                </p>
+              </td>
+              <td width="36%">
+                <h2 align="center">¿Dónde encontrarnos?</h2>
+                <p></p>
+                <p>
+                  <strong>Matriz Quito</strong><br />
+                  Alejandro Labaka y Francisco Bolaños N32-145, Quito 170527.
+                  Telefono: (02) 3456778<br /><br />
+
+                  <strong>Sucursal Sangolqui</strong> <br />
+                  Av. Gral. Rumiñahui, Quito 171103.<br />
+                  Telefono: (02) 3486555<br />
+                  <br />
+                  <strong>Sucursal Quito Norte</strong><br />
+                  Avenida Las Malvas E14-362 Quito<br />
+                  Telefono: (02) 5864285
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <div align="center">
+                  <h2>Visítanos</h2>
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d838.7519005860257!2d-78.51307807535179!3d-0.17871458593551626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59af962eaf507%3A0x8a42a029613dd77f!2sN32-145%2C%20A%2C%20Quito%20170527!5e0!3m2!1ses-419!2sec!4v1703021279487!5m2!1ses-419!2sec"
+                    width="600"
+                    height="450"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-        
-      </main>
-  
+    </main>
 
     <!-- Footer -->
-    <footer style="height: 300px;background-color:#55483e;box-shadow: -0px -3px 10px #55483e75;">
-      <div style="color: #e4d8cf;text-align: center;">
+    <footer
+      style="
+        height: 300px;
+        background-color: #55483e;
+        box-shadow: -0px -3px 10px #55483e75;
+      "
+    >
+      <div style="color: #e4d8cf; text-align: center">
         <p>&copy; 2023 CDE Textiles. Todos los derechos reservados.</p>
       </div>
     </footer>
