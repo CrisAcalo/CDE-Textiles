@@ -105,10 +105,10 @@
           type="text"
           id="celular"
           name="celular"
-          pattern="[0-9]{10}"
+          pattern="^(098|099)\d{7}$"
+          title="El número telefónico debe comenzar con '098' o '099' seguido de 7 dígitos numéricos"
           required
           placeholder="Ej: 0993648492"
-          title="El número de celular debe tener 10 dígitos"
           style="
             width: 100%;
             padding: 8px;

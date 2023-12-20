@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario Materia Prima</title>
+  </head>
+  <body
+    style="
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      padding: 50px;
+      background-color: #f4f4f4;
+    "
+  >
+    <form
+      action="../php/registro_material.php"
+      method="post"
+      style="
+        max-width: 1200px;
+        width: 80%;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      "
+    >
+      <h2 style="color: #007bff">Registrar Material</h2>
+      <table style="width: 100%;" align="center">
+        <tr>
+          <td style="width: 50%;padding: 20px;">
+            <label
+              for="nombreMateriaPrima"
+              style="
+                display: block;
+                text-align: left;
+                margin-bottom: 5px;
+                color: #333;
+              "
+              >Nombre del Producto:</label
+            >
+            
+            <input
+              type="text"
+              id="nombreMateriaPrima"
+              name="nombreMateriaPrima"
+              pattern="^[a-zA-Z0-9\s]+$"
+              required
+              placeholder="Ej: Algodon"
+              title="Solo se permiten letras, números y espacios. Sin tildes"
+              style="
+                width: 100%;
+                padding: 8px;
+                box-sizing: border-box;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                margin-bottom: 15px;
+              "
+            />
+
+            <label
+              for="codigoMateriaPrima"
+              style="
+                display: block;
+                text-align: left;
+                margin-bottom: 5px;
+                color: #333;
+              "
+              >Código de Identificación:</label
+            >
+            <input
+              type="text"
+              id="codigoMateriaPrima"
+              name="codigoMateriaPrima"
+              pattern="[A-Za-z0-9]+"
+              required
+              placeholder="Ej: MP12345"
+              title="Solo se permiten letras y números"
+              style="
+                width: 100%;
+                padding: 8px;
+                box-sizing: border-box;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                margin-bottom: 15px;
+              "
+            />
+
+            <label
+              for="proveedorMateriaPrima"
+              style="
+                display: block;
+                text-align: left;
+                margin-bottom: 5px;
+                color: #333;
+              "
+              >Proveedor:</label
+            >
+            <select
+              id="proveedorMateriaPrima"
+              name="proveedorMateriaPrima"
+              required
+              style="
+                width: 100%;
+                padding: 8px;
+                box-sizing: border-box;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                margin-bottom: 15px;
+              "
+            >
+              
+              <option value="Empresa SA">Empresa SA</option>
+              <option value="Importadora Chillogallo">Importadora Chillogallo</option>
+              <option value="Herrera Importaciones">Herrera Importaciones</option>
+              <option value="Pikka">Pikka</option>
+            </select>
+
+            <label
+              for="cantidadInicial"
+              style="
+                display: block;
+                text-align: left;
+                margin-bottom: 5px;
+                color: #333;
+              "
+              >Cantidad:</label
+            >
+            <input
+              type="number"
+              id="cantidadInicial"
+              name="cantidadInicial"
+              min="1"
+              required
+              placeholder="Ej: 1000"
+              title="La cantidad debe ser un número no negativo"
+              style="
+                width: 100%;
+                padding: 8px;
+                box-sizing: border-box;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                margin-bottom: 15px;
+              "
+            />
+          </td>
+          <td style="width: 50%;padding: 20px;">
+            <label
+              for="unidadMedidaMateriaPrima"
+              style="
+                display: block;
+                text-align: left;
+                margin-bottom: 5px;
+                color: #333;
+              "
+              >Unidad de Medida:</label
+            >
+            <select
+              id="unidadMedidaMateriaPrima"
+              name="unidadMedidaMateriaPrima"
+              required
+              style="
+                width: 100%;
+                padding: 8px;
+                box-sizing: border-box;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                margin-bottom: 15px;
+              "
+            >
+              <option value="m2">Metros cuadrados (m)<sup>2</sup></option>
+              <option value="kg">Kilogramos (kg)</option>
+            </select>
+
+            <label
+              for="fechaRecepcion"
+              style="
+                display: block;
+                text-align: left;
+                margin-bottom: 5px;
+                color: #333;
+              "
+              >Fecha de Recepción:</label
+            >
+            <input
+              type="date"
+              id="fechaRecepcion"
+              name="fechaRecepcion"
+              required
+              style="
+                width: 100%;
+                padding: 8px;
+                box-sizing: border-box;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                margin-bottom: 15px;
+              "
+            />
+
+            <label
+              for="fechaCaducidad"
+              style="
+                display: block;
+                text-align: left;
+                margin-bottom: 5px;
+                color: #333;
+              "
+              >Fecha de Caducidad (si aplica):</label
+            >
+            <input
+              type="date"
+              id="fechaCaducidad"
+              name="fechaCaducidad"
+              style="
+                width: 100%;
+                padding: 8px;
+                box-sizing: border-box;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                margin-bottom: 15px;
+              "
+            />
+
+            <label
+              for="condicionesAlmacenamiento"
+              style="
+                display: block;
+                text-align: left;
+                margin-bottom: 5px;
+                color: #333;
+              "
+              >Condiciones de Almacenamiento:</label
+            >
+            <textarea
+              id="condicionesAlmacenamiento"
+              name="condicionesAlmacenamiento"
+              placeholder="Ej: Almacenar en lugar seco y fresco""
+              style="
+                width: 100%;
+                padding: 8px;
+                box-sizing: border-box;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                margin-bottom: 15px;
+              "
+            ></textarea>
+          </td>
+        </tr>
+      </table>
+
+      <input
+        type="submit"
+        value="Guardar"
+        style="
+          background-color: #007bff;
+          color: #fff;
+          padding: 10px 15px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        "
+      />
+    </form>
+  </body>
+</html>
